@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="55%" stop-color="#102a44"/>
+      <stop offset="100%" stop-color="#0b566e"/>
+    </linearGradient>
+    <filter id="sombra" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="560" fill="url(#fondo)"/>
+
+  <!-- Líneas de datos del fondo -->
+  <g stroke="#1fd6ff" stroke-opacity="0.20" stroke-width="2">
+    <path d="M70 90 H250 V180 H430" fill="none"/>
+    <path d="M680 70 V180 H530" fill="none"/>
+    <path d="M90 460 H300 V380 H470" fill="none"/>
+    <path d="M830 430 H650 V330 H520" fill="none"/>
+  </g>
+
+  <!-- Nodos de datos -->
+  <g fill="#1fd6ff">
+    <circle cx="70" cy="90" r="6"/>
+    <circle cx="430" cy="180" r="6"/>
+    <circle cx="680" cy="70" r="6"/>
+    <circle cx="90" cy="460" r="6"/>
+    <circle cx="830" cy="430" r="6"/>
+  </g>
+
+  <!-- Modelo BIM simplificado -->
+  <g filter="url(#sombra)">
+    <rect x="305" y="150" width="290" height="250" rx="18" fill="#f6fbff" opacity="0.95"/>
+    <polygon points="350,340 450,275 550,340 450,405" fill="#d7f4ff" stroke="#0d8fb3" stroke-width="4"/>
+    <polygon points="350,210 450,150 550,210 450,270" fill="#ffffff" stroke="#0d8fb3" stroke-width="4"/>
+    <line x1="350" y1="210" x2="350" y2="340" stroke="#0d8fb3" stroke-width="4"/>
+    <line x1="550" y1="210" x2="550" y2="340" stroke="#0d8fb3" stroke-width="4"/>
+    <line x1="450" y1="270" x2="450" y2="405" stroke="#0d8fb3" stroke-width="4"/>
+    <rect x="392" y="215" width="48" height="38" rx="5" fill="#1fd6ff" opacity="0.9"/>
+    <rect x="462" y="215" width="48" height="38" rx="5" fill="#1fd6ff" opacity="0.9"/>
+    <rect x="427" y="314" width="48" height="55" rx="5" fill="#102a44" opacity="0.9"/>
+  </g>
+
+  <!-- Cerebro / IA -->
+  <g>
+    <circle cx="180" cy="275" r="78" fill="#132b44" stroke="#1fd6ff" stroke-width="4"/>
+    <path d="M155 260 C125 245,140 205,175 220 C190 190,235 205,225 242 C255 250,248 300,215 300 C210 340,155 330,165 295 C135 305,120 270,155 260Z" fill="#1fd6ff" opacity="0.22" stroke="#1fd6ff" stroke-width="3"/>
+    <circle cx="160" cy="252" r="6" fill="#ffffff"/>
+    <circle cx="195" cy="235" r="6" fill="#ffffff"/>
+    <circle cx="214" cy="280" r="6" fill="#ffffff"/>
+    <line x1="160" y1="252" x2="195" y2="235" stroke="#ffffff" stroke-width="2"/>
+    <line x1="195" y1="235" x2="214" y2="280" stroke="#ffffff" stroke-width="2"/>
+    <line x1="160" y1="252" x2="214" y2="280" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- Conexión IA - BIM -->
+  <path d="M260 275 C300 230,330 225,365 235" fill="none" stroke="#8ff5ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M260 298 C310 360,355 365,405 350" fill="none" stroke="#8ff5ff" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Texto -->
+  <text x="450" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#ffffff">IA + BIM</text>
+  <text x="450" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#a9eafa">Precisión técnica para soluciones digitales</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" fill="#ffffff">
+    <text x="124" y="385">Inteligencia artificial</text>
+    <text x="380" y="445">Modelo + datos</text>
+    <text x="620" y="275">Reglas</text>
+    <text x="620" y="302">Validación</text>
+    <text x="620" y="329">Trazabilidad</text>
+  </g>
+</svg>
